@@ -1,6 +1,66 @@
-"use strict";
+'use strict';
 // Embaralhamento Fisher–Yates, arrays, temporizadores e bloqueio de interação.
-let cards=[],opened=[],matched=[],attempts=0,locked=false,timer;
-const container=document.querySelector('#cards'),status=document.querySelector('#status');
-function render(){status.textContent='Tentativas: '+attempts+' | Pares: '+matched.length/2+'/6'+(matched.length===12?' — Você venceu!':'');container.replaceChildren();cards.forEach((symbol,index)=>{const visible=opened.includes(index)||matched.includes(index),b=document.createElement('button');b.textContent=visible?symbol:'?';b.setAttribute('aria-label',visible?'Carta '+(index+1)+': '+symbol:'Revelar carta '+(index+1));b.disabled=locked||visible;b.onclick=()=>{opened.push(index);if(opened.length===2){attempts++;if(cards[opened[0]]===cards[opened[1]]){matched.push(...opened);opened=[];}else{locked=true;timer=setTimeout(()=>{opened=[];locked=false;render();},900);}}render();};container.append(b);});}
-function start(){clearTimeout(timer);cards=['🍎','🚀','🐱','⚽','🌻','🎸'].flatMap(x=>[x,x]);for(let i=cards.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[cards[i],cards[j]]=[cards[j],cards[i]];}opened=[];matched=[];attempts=0;locked=false;render();}document.querySelector('#restart').onclick=start;start();
+let cards = [],
+    opened = [],
+    matched = [],
+    attempts = 0,
+    locked = false,
+    timer;
+const container = document.querySelector('#cards'),
+    status = document.querySelector('#status');
+function render() {
+    status.textContent =
+        'Tentativas: ' +
+        attempts +
+        ' | Pares: ' +
+        matched.length / 2 +
+        '/6' +
+        (matched.length === 12 ? ' — Você venceu!' : '');
+    container.replaceChildren();
+    cards.forEach((symbol, index) => {
+        const visible = opened.includes(index) || matched.includes(index),
+            b = document.createElement('button');
+        b.textContent = visible ? symbol : '?';
+        b.setAttribute(
+            'aria-label',
+            visible
+                ? 'Carta ' + (index + 1) + ': ' + symbol
+                : 'Revelar carta ' + (index + 1)
+        );
+        b.disabled = locked || visible;
+        b.onclick = () => {
+            opened.push(index);
+            if (opened.length === 2) {
+                attempts++;
+                if (cards[opened[0]] === cards[opened[1]]) {
+                    matched.push(...opened);
+                    opened = [];
+                } else {
+                    locked = true;
+                    timer = setTimeout(() => {
+                        opened = [];
+                        locked = false;
+                        render();
+                    }, 900);
+                }
+            }
+            render();
+        };
+        container.append(b);
+    });
+}
+function start() {
+    clearTimeout(timer);
+    cards = ['🍎', '🚀', '🐱', '⚽', '🌻', '🎸'].flatMap((x) => [x, x]);
+    for (let i = cards.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [cards[i], cards[j]] = [cards[j], cards[i]];
+    }
+    opened = [];
+    matched = [];
+    attempts = 0;
+    locked = false;
+    render();
+}
+document.querySelector('#restart').onclick = start;
+start();

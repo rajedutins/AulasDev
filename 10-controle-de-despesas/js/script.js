@@ -1,9 +1,94 @@
-"use strict";
+'use strict';
 // Objetos, filter/reduce, valores monetários em centavos, formulários e localStorage.
-const key='aulas-despesas-v1';let entries=[];
-try{const data=JSON.parse(localStorage.getItem(key)||'[]');if(Array.isArray(data))entries=data.filter(e=>e&&typeof e.description==='string'&&Number.isSafeInteger(e.cents)&&e.cents>0&&['receita','despesa'].includes(e.type));}catch{}
-const money=cents=>(cents/100).toLocaleString('pt-BR',{style:'currency',currency:'BRL'}),status=document.querySelector('#status');
-function save(){try{localStorage.setItem(key,JSON.stringify(entries));status.textContent='Dados salvos neste navegador.';}catch{status.textContent='Não foi possível salvar. Dados disponíveis apenas nesta sessão.';}}
-function render(){const income=entries.filter(e=>e.type==='receita').reduce((sum,e)=>sum+e.cents,0),expense=entries.filter(e=>e.type==='despesa').reduce((sum,e)=>sum+e.cents,0);document.querySelector('#income').textContent=money(income);document.querySelector('#expense').textContent=money(expense);document.querySelector('#balance').textContent=money(income-expense);
- const list=document.querySelector('#list'),filter=document.querySelector('#filter').value;list.replaceChildren();entries.forEach((entry,index)=>{if(filter!=='todos'&&entry.type!==filter)return;const li=document.createElement('li'),span=document.createElement('span'),button=document.createElement('button');span.textContent=entry.description+' • '+entry.type+' • '+money(entry.cents);button.textContent='Excluir';button.className='danger';button.setAttribute('aria-label','Excluir '+entry.description);button.onclick=()=>{entries.splice(index,1);save();render();};li.append(span,button);list.append(li);});if(!list.children.length){const li=document.createElement('li');li.textContent='Nenhum lançamento para este filtro.';list.append(li);}}
-document.querySelector('#form').onsubmit=e=>{e.preventDefault();const description=document.querySelector('#description'),amount=document.querySelector('#amount'),text=description.value.trim(),cents=Math.round(Number(amount.value)*100);if(!text){description.setCustomValidity('Digite uma descrição.');description.reportValidity();return;}if(!Number.isSafeInteger(cents)||cents<=0)return;entries.push({description:text,cents,type:document.querySelector('#type').value});save();e.target.reset();render();description.focus();};document.querySelector('#description').oninput=e=>e.target.setCustomValidity('');document.querySelector('#filter').onchange=render;render();
+const key = 'aulas-despesas-v1';
+let entries = [];
+try {
+    const data = JSON.parse(localStorage.getItem(key) || '[]');
+    if (Array.isArray(data))
+        entries = data.filter(
+            (e) =>
+                e &&
+                typeof e.description === 'string' &&
+                Number.isSafeInteger(e.cents) &&
+                e.cents > 0 &&
+                ['receita', 'despesa'].includes(e.type)
+        );
+} catch {}
+const money = (cents) =>
+        (cents / 100).toLocaleString('pt-BR', {
+            style: 'currency',
+            currency: 'BRL'
+        }),
+    status = document.querySelector('#status');
+function save() {
+    try {
+        localStorage.setItem(key, JSON.stringify(entries));
+        status.textContent = 'Dados salvos neste navegador.';
+    } catch {
+        status.textContent =
+            'Não foi possível salvar. Dados disponíveis apenas nesta sessão.';
+    }
+}
+function render() {
+    const income = entries
+            .filter((e) => e.type === 'receita')
+            .reduce((sum, e) => sum + e.cents, 0),
+        expense = entries
+            .filter((e) => e.type === 'despesa')
+            .reduce((sum, e) => sum + e.cents, 0);
+    document.querySelector('#income').textContent = money(income);
+    document.querySelector('#expense').textContent = money(expense);
+    document.querySelector('#balance').textContent = money(income - expense);
+    const list = document.querySelector('#list'),
+        filter = document.querySelector('#filter').value;
+    list.replaceChildren();
+    entries.forEach((entry, index) => {
+        if (filter !== 'todos' && entry.type !== filter) return;
+        const li = document.createElement('li'),
+            span = document.createElement('span'),
+            button = document.createElement('button');
+        span.textContent =
+            entry.description + ' • ' + entry.type + ' • ' + money(entry.cents);
+        button.textContent = 'Excluir';
+        button.className = 'danger';
+        button.setAttribute('aria-label', 'Excluir ' + entry.description);
+        button.onclick = () => {
+            entries.splice(index, 1);
+            save();
+            render();
+        };
+        li.append(span, button);
+        list.append(li);
+    });
+    if (!list.children.length) {
+        const li = document.createElement('li');
+        li.textContent = 'Nenhum lançamento para este filtro.';
+        list.append(li);
+    }
+}
+document.querySelector('#form').onsubmit = (e) => {
+    e.preventDefault();
+    const description = document.querySelector('#description'),
+        amount = document.querySelector('#amount'),
+        text = description.value.trim(),
+        cents = Math.round(Number(amount.value) * 100);
+    if (!text) {
+        description.setCustomValidity('Digite uma descrição.');
+        description.reportValidity();
+        return;
+    }
+    if (!Number.isSafeInteger(cents) || cents <= 0) return;
+    entries.push({
+        description: text,
+        cents,
+        type: document.querySelector('#type').value
+    });
+    save();
+    e.target.reset();
+    render();
+    description.focus();
+};
+document.querySelector('#description').oninput = (e) =>
+    e.target.setCustomValidity('');
+document.querySelector('#filter').onchange = render;
+render();

@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Registre receitas e despesas para acompanhar seu saldo.">
+<title>Controle de despesas | Aulas de programação</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/script.js" defer></script>
+</head>
+<body><main><h1>Controle de despesas</h1><p>Registre receitas e despesas para acompanhar seu saldo.</p><form id="form"><label>Descrição<input id="description" maxlength="100" required></label><div class="row"><label>Valor (R$)<input id="amount" type="number" min="0.01" max="1000000000" step="0.01" required></label><label>Tipo<select id="type"><option value="receita">Receita</option><option value="despesa">Despesa</option></select></label></div><button>Adicionar lançamento</button></form><p id="status" role="status"></p><div class="summary"><p>Receitas<br><strong id="income"></strong></p><p>Despesas<br><strong id="expense"></strong></p><p>Saldo<br><strong id="balance"></strong></p></div><label>Mostrar<select id="filter"><option value="todos">Todos</option><option value="receita">Receitas</option><option value="despesa">Despesas</option></select></label><p class="muted">Os totais consideram todos os lançamentos, independentemente do filtro.</p><ul id="list"></ul><footer>Projeto didático • HTML5, CSS3 e JavaScript</footer></main></body>
+</html>

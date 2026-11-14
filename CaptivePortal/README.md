@@ -14,7 +14,8 @@ Abra `index.html` em um navegador moderno ou use o Live Server do VS Code. Não 
 
 ## Recursos
 
-- Perfis de aluno, colaborador (incluindo professores) e visitante.
+- Interface minimalista com logo centralizada, fundo branco e formulário único, adaptado a celular e computador.
+- Perfis de aluno, professor e visitante.
 - Rótulos e instruções adaptados ao perfil.
 - Campos obrigatórios e aceite de orientações de uso.
 - Botão para mostrar e ocultar senha.

@@ -9,45 +9,27 @@
     <script src="js/script.js" defer></script>
 </head>
 <body>
-    <div class="portal">
-        <aside class="welcome" aria-labelledby="welcome-title">
+    <main class="portal">
+        <section class="access" aria-labelledby="access-title">
             <a class="brand" href="https://www.undb.edu.br/" target="_blank" rel="noopener noreferrer" aria-label="UNDB — site oficial (abre em nova aba)">
                 <img class="brand-logo" src="images/logo_undb.png" alt="UNDB — Centro Universitário" width="252" height="77">
             </a>
-            <div class="welcome-copy">
-                <span class="eyebrow">CONECTE-SE À UNDB</span>
-                <h1 id="welcome-title">Seu próximo<br>conhecimento<br>começa <em>aqui.</em></h1>
-                <p>Conecte-se à rede do campus e continue explorando, aprendendo e criando.</p>
-                <div class="network"><span class="signal" aria-hidden="true">◉</span><div>Internet no campus UNDB<small>Acesso à comunidade acadêmica</small></div></div>
-            </div>
-            <p class="welcome-footer"><a href="https://www.undb.edu.br/" target="_blank" rel="noopener noreferrer">Conheça a UNDB <span aria-hidden="true">↗</span></a></p>
-            <div class="orbit orbit-one" aria-hidden="true"></div>
-            <div class="orbit orbit-two" aria-hidden="true"></div>
-        </aside>
-
-        <main>
-            <header class="topbar"><span>PORTAL DE INTERNET</span><span class="pill">Versão de demonstração</span></header>
-            <section class="access" aria-labelledby="access-title">
-                <div class="access-icon" aria-hidden="true">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 8a15 15 0 0 1 18 0M6 12a10 10 0 0 1 12 0M9 16a5 5 0 0 1 6 0" stroke-linecap="round"/><circle cx="12" cy="20" r="1" fill="currentColor" stroke="none"/></svg>
-                </div>
-                <p class="eyebrow">BEM-VINDO À REDE</p>
-                <h2 id="access-title">Vamos conectar você.</h2>
-                <p class="intro">Escolha seu perfil e informe suas credenciais de acesso.</p>
+            <h1 id="access-title">Acesso à internet</h1>
+                <p id="access-intro" class="intro">Escolha seu perfil e informe suas credenciais de acesso.</p>
 
                 <form id="login-form">
                     <fieldset class="profiles">
                         <legend>Qual é o seu perfil?</legend>
                         <div class="profile-options">
                             <label><input type="radio" name="profile" value="aluno" checked><span>Aluno</span></label>
-                            <label><input type="radio" name="profile" value="colaborador"><span>Colaborador</span></label>
+                            <label><input type="radio" name="profile" value="professor"><span>Professor</span></label>
                             <label><input type="radio" name="profile" value="visitante"><span>Visitante</span></label>
                         </div>
                     </fieldset>
                     <div class="field">
-                        <label id="identity-label" for="identity">Matrícula</label>
-                        <input id="identity" name="identity" type="text" autocomplete="username" placeholder="Digite sua matrícula" maxlength="100" required aria-describedby="identity-hint">
-                        <small id="identity-hint">Use a mesma matrícula do portal acadêmico.</small>
+                        <label id="identity-label" for="identity">CPF</label>
+                        <input id="identity" name="identity" type="text" inputmode="numeric" autocomplete="username" placeholder="Digite seu CPF" maxlength="11" pattern="[0-9]{11}" required aria-describedby="identity-hint">
+                        <small id="identity-hint">Informe seu CPF, somente números.</small>
                     </div>
                     <div class="field">
                         <label for="password" id="password-label">Senha</label>
@@ -56,28 +38,55 @@
                             <button id="toggle-password" class="show-password" type="button" aria-controls="password" aria-pressed="false">Mostrar</button>
                         </div>
                     </div>
-                    <label class="consent"><input id="consent" type="checkbox" required><span>Li e aceito as <button type="button" class="text-button" id="open-terms">orientações de uso da rede</button>.</span></label>
-                    <button class="connect" type="submit"><span>Conectar à internet</span><span aria-hidden="true">→</span></button>
+                    <div id="first-access" class="first-access">
+                        <strong>Primeiro acesso – Alunos</strong>
+                        <p>Usuário: CPF (somente números)<br>Senha inicial: Data de nascimento (DD/MM/AAAA)</p>
+                    </div>
+                    <div class="consent-block">
+                        <label class="consent"><input id="consent" name="termsAccepted" type="checkbox" required><span>Li e aceito os termos de utilização da rede Wi-Fi institucional.</span></label>
+                        <button type="button" class="text-button" id="open-terms" aria-haspopup="dialog" aria-controls="terms">Ler termo de aceite</button>
+                    </div>
+                    <button class="connect login-connect" type="submit"><span>Conectar à internet</span><span class="button-arrow" aria-hidden="true">→</span></button>
                     <p id="feedback" class="feedback" role="status" aria-live="polite"></p>
                 </form>
 
-                <div class="help"><span class="help-icon" aria-hidden="true">?</span><p><strong>Precisa de ajuda para acessar?</strong><br>Procure a equipe de TI ou a recepção do campus.<br><a href="https://ajuda.undb.edu.br/" target="_blank" rel="noopener noreferrer">Central de Ajuda UNDB ↗</a></p></div>
+                <form id="visitor-form" hidden aria-label="Cadastro de visitante">
+                    <div class="field">
+                        <label for="visitor-name">Nome completo</label>
+                        <input id="visitor-name" name="name" type="text" autocomplete="name" placeholder="Digite seu nome completo" maxlength="150" required>
+                    </div>
+                    <div class="field">
+                        <label for="visitor-cpf">CPF</label>
+                        <input id="visitor-cpf" name="cpf" type="text" inputmode="numeric" placeholder="000.000.000-00" maxlength="14" required aria-describedby="cpf-hint">
+                        <small id="cpf-hint">Informe os 11 dígitos do CPF.</small>
+                    </div>
+                    <div class="field">
+                        <label for="visitor-email">Endereço de e-mail</label>
+                        <input id="visitor-email" name="email" type="email" autocomplete="email" placeholder="seunome@exemplo.com" maxlength="254" required>
+                    </div>
+                    <div class="consent-block">
+                        <label class="consent"><input id="visitor-consent" name="termsAccepted" type="checkbox" required><span>Li e aceito os termos de utilização da rede Wi-Fi institucional.</span></label>
+                        <button type="button" class="text-button" id="visitor-terms" aria-haspopup="dialog" aria-controls="terms">Ler termo de aceite</button>
+                    </div>
+                    <button class="connect" type="submit">Cadastrar visitante <span aria-hidden="true">→</span></button>
+                    <p id="visitor-feedback" class="feedback" role="status" aria-live="polite"></p>
+                    <button id="back-to-login" type="button" class="back-button">Voltar para autenticação</button>
+                </form>
+
                 <p class="demo-note">Protótipo visual: use dados fictícios. Esta página ainda não autentica usuários nem libera a rede.</p>
-            </section>
-            <footer><span>© <span id="year">2026</span> UNDB — Centro Universitário</span><a href="https://www.undb.edu.br/" target="_blank" rel="noopener noreferrer">Site oficial ↗</a></footer>
-        </main>
-    </div>
+        </section>
+    </main>
 
     <dialog id="terms" aria-labelledby="terms-title">
-        <h2 id="terms-title">Orientações de uso da rede</h2>
-        <p>Este conteúdo é uma proposta para o protótipo. As regras oficiais devem ser fornecidas pelo Centro Universitário antes da publicação.</p>
+        <h2 id="terms-title">TERMO DE ACEITE – USO DA REDE WI-FI</h2>
+        <p>Ao acessar a rede Wi-Fi institucional, declaro estar ciente de que sua utilização é destinada a fins acadêmicos e institucionais, estando sujeita a <strong>gerenciamento, monitoramento e registro de acessos</strong>, conforme as políticas de segurança da informação e a legislação vigente, incluindo a LGPD.</p>
+        <p>Comprometo-me a utilizar a rede de forma ética, responsável e lícita, reconhecendo que o uso inadequado poderá resultar na suspensão do acesso.</p>
+        <h3>Primeiro acesso – Alunos</h3>
         <ul>
-            <li>Utilize a conexão de forma responsável e respeite os demais usuários.</li>
-            <li>Não compartilhe suas credenciais de acesso.</li>
-            <li>Priorize atividades acadêmicas e preserve a segurança dos dispositivos.</li>
+            <li><strong>Usuário:</strong> CPF (somente números)</li>
+            <li><strong>Senha inicial:</strong> Data de nascimento (DD/MM/AAAA)</li>
         </ul>
-        <p>As informações sobre tratamento de dados e atendimento devem ser incluídas na versão institucional.</p>
-        <form method="dialog"><button class="connect">Entendi</button></form>
+        <form method="dialog"><button class="connect terms-close">Fechar leitura</button></form>
     </dialog>
 </body>
 </html>

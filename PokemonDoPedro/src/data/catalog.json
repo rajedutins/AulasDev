@@ -1,0 +1,1423 @@
+{
+    "pokemon": [
+        {
+            "id": "dragonite",
+            "name": "Dragonite",
+            "types": [
+                "Dragon",
+                "Flying"
+            ],
+            "baseStats": {
+                "hp": 91,
+                "atk": 134,
+                "def": 95,
+                "spa": 100,
+                "spd": 100,
+                "spe": 80
+            },
+            "moves": [
+                "extremespeed",
+                "earthquake",
+                "dragonclaw"
+            ]
+        },
+        {
+            "id": "kingambit",
+            "name": "Kingambit",
+            "types": [
+                "Dark",
+                "Steel"
+            ],
+            "baseStats": {
+                "hp": 100,
+                "atk": 135,
+                "def": 120,
+                "spa": 60,
+                "spd": 85,
+                "spe": 50
+            },
+            "moves": [
+                "kowtowcleave",
+                "suckerpunch",
+                "ironhead"
+            ]
+        },
+        {
+            "id": "garchomp",
+            "name": "Garchomp",
+            "types": [
+                "Dragon",
+                "Ground"
+            ],
+            "baseStats": {
+                "hp": 108,
+                "atk": 130,
+                "def": 95,
+                "spa": 80,
+                "spd": 85,
+                "spe": 102
+            },
+            "moves": [
+                "earthquake",
+                "dragonclaw",
+                "scaleshot"
+            ]
+        },
+        {
+            "id": "gholdengo",
+            "name": "Gholdengo",
+            "types": [
+                "Steel",
+                "Ghost"
+            ],
+            "baseStats": {
+                "hp": 87,
+                "atk": 60,
+                "def": 95,
+                "spa": 133,
+                "spd": 91,
+                "spe": 84
+            },
+            "moves": [
+                "makeitrain",
+                "shadowball",
+                "thunderbolt"
+            ]
+        },
+        {
+            "id": "greattusk",
+            "name": "Great Tusk",
+            "types": [
+                "Ground",
+                "Fighting"
+            ],
+            "baseStats": {
+                "hp": 115,
+                "atk": 131,
+                "def": 131,
+                "spa": 53,
+                "spd": 53,
+                "spe": 87
+            },
+            "moves": [
+                "headlongrush",
+                "closecombat",
+                "rapidspin"
+            ]
+        },
+        {
+            "id": "zamazenta",
+            "name": "Zamazenta",
+            "types": [
+                "Fighting"
+            ],
+            "baseStats": {
+                "hp": 92,
+                "atk": 120,
+                "def": 115,
+                "spa": 80,
+                "spd": 115,
+                "spe": 138
+            },
+            "moves": [
+                "closecombat",
+                "bodypress",
+                "crunch"
+            ]
+        },
+        {
+            "id": "dragapult",
+            "name": "Dragapult",
+            "types": [
+                "Dragon",
+                "Ghost"
+            ],
+            "baseStats": {
+                "hp": 88,
+                "atk": 120,
+                "def": 75,
+                "spa": 100,
+                "spd": 75,
+                "spe": 142
+            },
+            "moves": [
+                "dragondarts",
+                "shadowball",
+                "uturn"
+            ]
+        },
+        {
+            "id": "ragingbolt",
+            "name": "Raging Bolt",
+            "types": [
+                "Electric",
+                "Dragon"
+            ],
+            "baseStats": {
+                "hp": 125,
+                "atk": 73,
+                "def": 91,
+                "spa": 137,
+                "spd": 89,
+                "spe": 75
+            },
+            "moves": [
+                "dracometeor",
+                "thunderbolt",
+                "thunderclap"
+            ]
+        },
+        {
+            "id": "roaringmoon",
+            "name": "Roaring Moon",
+            "types": [
+                "Dragon",
+                "Dark"
+            ],
+            "baseStats": {
+                "hp": 105,
+                "atk": 139,
+                "def": 71,
+                "spa": 55,
+                "spd": 101,
+                "spe": 119
+            },
+            "moves": [
+                "outrage",
+                "knockoff",
+                "acrobatics"
+            ]
+        },
+        {
+            "id": "ironvaliant",
+            "name": "Iron Valiant",
+            "types": [
+                "Fairy",
+                "Fighting"
+            ],
+            "baseStats": {
+                "hp": 74,
+                "atk": 130,
+                "def": 90,
+                "spa": 120,
+                "spd": 60,
+                "spe": 116
+            },
+            "moves": [
+                "closecombat",
+                "moonblast",
+                "knockoff"
+            ]
+        },
+        {
+            "id": "ogerponwellspring",
+            "name": "Ogerpon-Wellspring",
+            "types": [
+                "Grass",
+                "Water"
+            ],
+            "baseStats": {
+                "hp": 80,
+                "atk": 120,
+                "def": 84,
+                "spa": 60,
+                "spd": 96,
+                "spe": 110
+            },
+            "moves": [
+                "ivycudgel",
+                "powerwhip",
+                "hornleech"
+            ]
+        },
+        {
+            "id": "kyurem",
+            "name": "Kyurem",
+            "types": [
+                "Dragon",
+                "Ice"
+            ],
+            "baseStats": {
+                "hp": 125,
+                "atk": 130,
+                "def": 90,
+                "spa": 130,
+                "spd": 90,
+                "spe": 95
+            },
+            "moves": [
+                "dracometeor",
+                "icebeam",
+                "freezedry"
+            ]
+        },
+        {
+            "id": "darkrai",
+            "name": "Darkrai",
+            "types": [
+                "Dark"
+            ],
+            "baseStats": {
+                "hp": 70,
+                "atk": 90,
+                "def": 90,
+                "spa": 135,
+                "spd": 90,
+                "spe": 125
+            },
+            "moves": [
+                "darkpulse",
+                "icebeam",
+                "sludgebomb"
+            ]
+        },
+        {
+            "id": "cinderace",
+            "name": "Cinderace",
+            "types": [
+                "Fire"
+            ],
+            "baseStats": {
+                "hp": 80,
+                "atk": 116,
+                "def": 75,
+                "spa": 65,
+                "spd": 75,
+                "spe": 119
+            },
+            "moves": [
+                "highjumpkick",
+                "pyroball",
+                "uturn"
+            ]
+        },
+        {
+            "id": "primarina",
+            "name": "Primarina",
+            "types": [
+                "Water",
+                "Fairy"
+            ],
+            "baseStats": {
+                "hp": 80,
+                "atk": 74,
+                "def": 74,
+                "spa": 126,
+                "spd": 116,
+                "spe": 60
+            },
+            "moves": [
+                "hydropump",
+                "moonblast",
+                "sparklingaria"
+            ]
+        },
+        {
+            "id": "rillaboom",
+            "name": "Rillaboom",
+            "types": [
+                "Grass"
+            ],
+            "baseStats": {
+                "hp": 100,
+                "atk": 125,
+                "def": 90,
+                "spa": 60,
+                "spd": 70,
+                "spe": 85
+            },
+            "moves": [
+                "woodhammer",
+                "knockoff",
+                "grassyglide"
+            ]
+        },
+        {
+            "id": "samurotthisui",
+            "name": "Samurott-Hisui",
+            "types": [
+                "Water",
+                "Dark"
+            ],
+            "baseStats": {
+                "hp": 90,
+                "atk": 108,
+                "def": 80,
+                "spa": 100,
+                "spd": 65,
+                "spe": 85
+            },
+            "moves": [
+                "razorshell",
+                "ceaselessedge",
+                "aquajet"
+            ]
+        },
+        {
+            "id": "gliscor",
+            "name": "Gliscor",
+            "types": [
+                "Ground",
+                "Flying"
+            ],
+            "baseStats": {
+                "hp": 75,
+                "atk": 95,
+                "def": 125,
+                "spa": 45,
+                "spd": 75,
+                "spe": 95
+            },
+            "moves": [
+                "earthquake",
+                "knockoff",
+                "uturn"
+            ]
+        },
+        {
+            "id": "corviknight",
+            "name": "Corviknight",
+            "types": [
+                "Flying",
+                "Steel"
+            ],
+            "baseStats": {
+                "hp": 98,
+                "atk": 87,
+                "def": 105,
+                "spa": 53,
+                "spd": 85,
+                "spe": 67
+            },
+            "moves": [
+                "bravebird",
+                "bodypress",
+                "uturn"
+            ]
+        },
+        {
+            "id": "garganacl",
+            "name": "Garganacl",
+            "types": [
+                "Rock"
+            ],
+            "baseStats": {
+                "hp": 100,
+                "atk": 100,
+                "def": 130,
+                "spa": 45,
+                "spd": 90,
+                "spe": 35
+            },
+            "moves": [
+                "bodypress",
+                "saltcure",
+                "earthquake"
+            ]
+        }
+    ],
+    "moves": {
+        "extremespeed": {
+            "id": "extremespeed",
+            "name": "Extreme Speed",
+            "type": "Normal",
+            "power": 80,
+            "accuracy": 100,
+            "category": "Physical",
+            "priority": 2,
+            "description": "Nearly always goes first.",
+            "multihit": 1,
+            "recoil": null,
+            "drain": null,
+            "secondary": null
+        },
+        "earthquake": {
+            "id": "earthquake",
+            "name": "Earthquake",
+            "type": "Ground",
+            "power": 100,
+            "accuracy": 100,
+            "category": "Physical",
+            "priority": 0,
+            "description": "Hits adjacent Pokemon. Double damage on Dig.",
+            "multihit": 1,
+            "recoil": null,
+            "drain": null,
+            "secondary": null
+        },
+        "dragonclaw": {
+            "id": "dragonclaw",
+            "name": "Dragon Claw",
+            "type": "Dragon",
+            "power": 80,
+            "accuracy": 100,
+            "category": "Physical",
+            "priority": 0,
+            "description": "No additional effect.",
+            "multihit": 1,
+            "recoil": null,
+            "drain": null,
+            "secondary": null
+        },
+        "kowtowcleave": {
+            "id": "kowtowcleave",
+            "name": "Kowtow Cleave",
+            "type": "Dark",
+            "power": 85,
+            "accuracy": true,
+            "category": "Physical",
+            "priority": 0,
+            "description": "This move does not check accuracy.",
+            "multihit": 1,
+            "recoil": null,
+            "drain": null,
+            "secondary": null
+        },
+        "suckerpunch": {
+            "id": "suckerpunch",
+            "name": "Sucker Punch",
+            "type": "Dark",
+            "power": 70,
+            "accuracy": 100,
+            "category": "Physical",
+            "priority": 1,
+            "description": "Usually goes first. Fails if target is not attacking.",
+            "multihit": 1,
+            "recoil": null,
+            "drain": null,
+            "secondary": null
+        },
+        "ironhead": {
+            "id": "ironhead",
+            "name": "Iron Head",
+            "type": "Steel",
+            "power": 80,
+            "accuracy": 100,
+            "category": "Physical",
+            "priority": 0,
+            "description": "30% chance to make the target flinch.",
+            "multihit": 1,
+            "recoil": null,
+            "drain": null,
+            "secondary": {
+                "chance": 30,
+                "volatileStatus": "flinch"
+            }
+        },
+        "scaleshot": {
+            "id": "scaleshot",
+            "name": "Scale Shot",
+            "type": "Dragon",
+            "power": 25,
+            "accuracy": 90,
+            "category": "Physical",
+            "priority": 0,
+            "description": "Hits 2-5 times. User: -1 Def, +1 Spe after last hit.",
+            "multihit": [
+                2,
+                5
+            ],
+            "recoil": null,
+            "drain": null,
+            "secondary": null
+        },
+        "makeitrain": {
+            "id": "makeitrain",
+            "name": "Make It Rain",
+            "type": "Steel",
+            "power": 120,
+            "accuracy": 100,
+            "category": "Special",
+            "priority": 0,
+            "description": "Lowers the user's Sp. Atk by 1. Hits foe(s).",
+            "multihit": 1,
+            "recoil": null,
+            "drain": null,
+            "secondary": null
+        },
+        "shadowball": {
+            "id": "shadowball",
+            "name": "Shadow Ball",
+            "type": "Ghost",
+            "power": 80,
+            "accuracy": 100,
+            "category": "Special",
+            "priority": 0,
+            "description": "20% chance to lower the target's Sp. Def by 1.",
+            "multihit": 1,
+            "recoil": null,
+            "drain": null,
+            "secondary": {
+                "chance": 20,
+                "boosts": {
+                    "spd": -1
+                }
+            }
+        },
+        "thunderbolt": {
+            "id": "thunderbolt",
+            "name": "Thunderbolt",
+            "type": "Electric",
+            "power": 90,
+            "accuracy": 100,
+            "category": "Special",
+            "priority": 0,
+            "description": "10% chance to paralyze the target.",
+            "multihit": 1,
+            "recoil": null,
+            "drain": null,
+            "secondary": {
+                "chance": 10,
+                "status": "par"
+            }
+        },
+        "headlongrush": {
+            "id": "headlongrush",
+            "name": "Headlong Rush",
+            "type": "Ground",
+            "power": 120,
+            "accuracy": 100,
+            "category": "Physical",
+            "priority": 0,
+            "description": "Lowers the user's Defense and Sp. Def by 1.",
+            "multihit": 1,
+            "recoil": null,
+            "drain": null,
+            "secondary": null
+        },
+        "closecombat": {
+            "id": "closecombat",
+            "name": "Close Combat",
+            "type": "Fighting",
+            "power": 120,
+            "accuracy": 100,
+            "category": "Physical",
+            "priority": 0,
+            "description": "Lowers the user's Defense and Sp. Def by 1.",
+            "multihit": 1,
+            "recoil": null,
+            "drain": null,
+            "secondary": null
+        },
+        "rapidspin": {
+            "id": "rapidspin",
+            "name": "Rapid Spin",
+            "type": "Normal",
+            "power": 50,
+            "accuracy": 100,
+            "category": "Physical",
+            "priority": 0,
+            "description": "Free user from hazards/bind/Leech Seed; +1 Spe.",
+            "multihit": 1,
+            "recoil": null,
+            "drain": null,
+            "secondary": {
+                "chance": 100,
+                "self": {
+                    "boosts": {
+                        "spe": 1
+                    }
+                }
+            }
+        },
+        "bodypress": {
+            "id": "bodypress",
+            "name": "Body Press",
+            "type": "Fighting",
+            "power": 80,
+            "accuracy": 100,
+            "category": "Physical",
+            "priority": 0,
+            "description": "Uses user's Def stat as Atk in damage calculation.",
+            "multihit": 1,
+            "recoil": null,
+            "drain": null,
+            "secondary": null
+        },
+        "crunch": {
+            "id": "crunch",
+            "name": "Crunch",
+            "type": "Dark",
+            "power": 80,
+            "accuracy": 100,
+            "category": "Physical",
+            "priority": 0,
+            "description": "20% chance to lower the target's Defense by 1.",
+            "multihit": 1,
+            "recoil": null,
+            "drain": null,
+            "secondary": {
+                "chance": 20,
+                "boosts": {
+                    "def": -1
+                }
+            }
+        },
+        "dragondarts": {
+            "id": "dragondarts",
+            "name": "Dragon Darts",
+            "type": "Dragon",
+            "power": 50,
+            "accuracy": 100,
+            "category": "Physical",
+            "priority": 0,
+            "description": "Hits twice. Doubles: Tries to hit each foe once.",
+            "multihit": 2,
+            "recoil": null,
+            "drain": null,
+            "secondary": null
+        },
+        "uturn": {
+            "id": "uturn",
+            "name": "U-turn",
+            "type": "Bug",
+            "power": 70,
+            "accuracy": 100,
+            "category": "Physical",
+            "priority": 0,
+            "description": "User switches out after damaging the target.",
+            "multihit": 1,
+            "recoil": null,
+            "drain": null,
+            "secondary": null
+        },
+        "dracometeor": {
+            "id": "dracometeor",
+            "name": "Draco Meteor",
+            "type": "Dragon",
+            "power": 130,
+            "accuracy": 90,
+            "category": "Special",
+            "priority": 0,
+            "description": "Lowers the user's Sp. Atk by 2.",
+            "multihit": 1,
+            "recoil": null,
+            "drain": null,
+            "secondary": null
+        },
+        "thunderclap": {
+            "id": "thunderclap",
+            "name": "Thunderclap",
+            "type": "Electric",
+            "power": 70,
+            "accuracy": 100,
+            "category": "Special",
+            "priority": 1,
+            "description": "Usually goes first. Fails if target is not attacking.",
+            "multihit": 1,
+            "recoil": null,
+            "drain": null,
+            "secondary": null
+        },
+        "outrage": {
+            "id": "outrage",
+            "name": "Outrage",
+            "type": "Dragon",
+            "power": 120,
+            "accuracy": 100,
+            "category": "Physical",
+            "priority": 0,
+            "description": "Lasts 2-3 turns. Confuses the user afterwards.",
+            "multihit": 1,
+            "recoil": null,
+            "drain": null,
+            "secondary": null
+        },
+        "knockoff": {
+            "id": "knockoff",
+            "name": "Knock Off",
+            "type": "Dark",
+            "power": 65,
+            "accuracy": 100,
+            "category": "Physical",
+            "priority": 0,
+            "description": "1.5× damage if foe holds an item. Removes item.",
+            "multihit": 1,
+            "recoil": null,
+            "drain": null,
+            "secondary": null
+        },
+        "acrobatics": {
+            "id": "acrobatics",
+            "name": "Acrobatics",
+            "type": "Flying",
+            "power": 55,
+            "accuracy": 100,
+            "category": "Physical",
+            "priority": 0,
+            "description": "Power doubles if the user has no held item.",
+            "multihit": 1,
+            "recoil": null,
+            "drain": null,
+            "secondary": null
+        },
+        "moonblast": {
+            "id": "moonblast",
+            "name": "Moonblast",
+            "type": "Fairy",
+            "power": 95,
+            "accuracy": 100,
+            "category": "Special",
+            "priority": 0,
+            "description": "30% chance to lower the target's Sp. Atk by 1.",
+            "multihit": 1,
+            "recoil": null,
+            "drain": null,
+            "secondary": {
+                "chance": 30,
+                "boosts": {
+                    "spa": -1
+                }
+            }
+        },
+        "ivycudgel": {
+            "id": "ivycudgel",
+            "name": "Ivy Cudgel",
+            "type": "Grass",
+            "power": 100,
+            "accuracy": 100,
+            "category": "Physical",
+            "priority": 0,
+            "description": "High critical hit ratio. Type depends on user's form.",
+            "multihit": 1,
+            "recoil": null,
+            "drain": null,
+            "secondary": null
+        },
+        "powerwhip": {
+            "id": "powerwhip",
+            "name": "Power Whip",
+            "type": "Grass",
+            "power": 120,
+            "accuracy": 85,
+            "category": "Physical",
+            "priority": 0,
+            "description": "No additional effect.",
+            "multihit": 1,
+            "recoil": null,
+            "drain": null,
+            "secondary": null
+        },
+        "hornleech": {
+            "id": "hornleech",
+            "name": "Horn Leech",
+            "type": "Grass",
+            "power": 75,
+            "accuracy": 100,
+            "category": "Physical",
+            "priority": 0,
+            "description": "User recovers 50% of the damage dealt.",
+            "multihit": 1,
+            "recoil": null,
+            "drain": [
+                1,
+                2
+            ],
+            "secondary": null
+        },
+        "icebeam": {
+            "id": "icebeam",
+            "name": "Ice Beam",
+            "type": "Ice",
+            "power": 90,
+            "accuracy": 100,
+            "category": "Special",
+            "priority": 0,
+            "description": "10% chance to freeze the target.",
+            "multihit": 1,
+            "recoil": null,
+            "drain": null,
+            "secondary": {
+                "chance": 10,
+                "status": "frz"
+            }
+        },
+        "freezedry": {
+            "id": "freezedry",
+            "name": "Freeze-Dry",
+            "type": "Ice",
+            "power": 70,
+            "accuracy": 100,
+            "category": "Special",
+            "priority": 0,
+            "description": "10% chance to freeze. Super effective on Water.",
+            "multihit": 1,
+            "recoil": null,
+            "drain": null,
+            "secondary": {
+                "chance": 10,
+                "status": "frz"
+            }
+        },
+        "darkpulse": {
+            "id": "darkpulse",
+            "name": "Dark Pulse",
+            "type": "Dark",
+            "power": 80,
+            "accuracy": 100,
+            "category": "Special",
+            "priority": 0,
+            "description": "20% chance to make the target flinch.",
+            "multihit": 1,
+            "recoil": null,
+            "drain": null,
+            "secondary": {
+                "chance": 20,
+                "volatileStatus": "flinch"
+            }
+        },
+        "sludgebomb": {
+            "id": "sludgebomb",
+            "name": "Sludge Bomb",
+            "type": "Poison",
+            "power": 90,
+            "accuracy": 100,
+            "category": "Special",
+            "priority": 0,
+            "description": "30% chance to poison the target.",
+            "multihit": 1,
+            "recoil": null,
+            "drain": null,
+            "secondary": {
+                "chance": 30,
+                "status": "psn"
+            }
+        },
+        "highjumpkick": {
+            "id": "highjumpkick",
+            "name": "High Jump Kick",
+            "type": "Fighting",
+            "power": 130,
+            "accuracy": 90,
+            "category": "Physical",
+            "priority": 0,
+            "description": "User is hurt by 50% of its max HP if it misses.",
+            "multihit": 1,
+            "recoil": null,
+            "drain": null,
+            "secondary": null
+        },
+        "pyroball": {
+            "id": "pyroball",
+            "name": "Pyro Ball",
+            "type": "Fire",
+            "power": 120,
+            "accuracy": 90,
+            "category": "Physical",
+            "priority": 0,
+            "description": "10% chance to burn the target. Thaws user.",
+            "multihit": 1,
+            "recoil": null,
+            "drain": null,
+            "secondary": {
+                "chance": 10,
+                "status": "brn"
+            }
+        },
+        "hydropump": {
+            "id": "hydropump",
+            "name": "Hydro Pump",
+            "type": "Water",
+            "power": 110,
+            "accuracy": 80,
+            "category": "Special",
+            "priority": 0,
+            "description": "No additional effect.",
+            "multihit": 1,
+            "recoil": null,
+            "drain": null,
+            "secondary": null
+        },
+        "sparklingaria": {
+            "id": "sparklingaria",
+            "name": "Sparkling Aria",
+            "type": "Water",
+            "power": 90,
+            "accuracy": 100,
+            "category": "Special",
+            "priority": 0,
+            "description": "The target is cured of its burn.",
+            "multihit": 1,
+            "recoil": null,
+            "drain": null,
+            "secondary": {
+                "chance": 100,
+                "volatileStatus": "sparklingaria"
+            }
+        },
+        "woodhammer": {
+            "id": "woodhammer",
+            "name": "Wood Hammer",
+            "type": "Grass",
+            "power": 120,
+            "accuracy": 100,
+            "category": "Physical",
+            "priority": 0,
+            "description": "Has 33% recoil.",
+            "multihit": 1,
+            "recoil": [
+                33,
+                100
+            ],
+            "drain": null,
+            "secondary": null
+        },
+        "grassyglide": {
+            "id": "grassyglide",
+            "name": "Grassy Glide",
+            "type": "Grass",
+            "power": 55,
+            "accuracy": 100,
+            "category": "Physical",
+            "priority": 0,
+            "description": "User on Grassy Terrain: +1 priority.",
+            "multihit": 1,
+            "recoil": null,
+            "drain": null,
+            "secondary": null
+        },
+        "razorshell": {
+            "id": "razorshell",
+            "name": "Razor Shell",
+            "type": "Water",
+            "power": 75,
+            "accuracy": 95,
+            "category": "Physical",
+            "priority": 0,
+            "description": "50% chance to lower the target's Defense by 1.",
+            "multihit": 1,
+            "recoil": null,
+            "drain": null,
+            "secondary": {
+                "chance": 50,
+                "boosts": {
+                    "def": -1
+                }
+            }
+        },
+        "ceaselessedge": {
+            "id": "ceaselessedge",
+            "name": "Ceaseless Edge",
+            "type": "Dark",
+            "power": 65,
+            "accuracy": 90,
+            "category": "Physical",
+            "priority": 0,
+            "description": "Sets a layer of Spikes on the opposing side.",
+            "multihit": 1,
+            "recoil": null,
+            "drain": null,
+            "secondary": {}
+        },
+        "aquajet": {
+            "id": "aquajet",
+            "name": "Aqua Jet",
+            "type": "Water",
+            "power": 40,
+            "accuracy": 100,
+            "category": "Physical",
+            "priority": 1,
+            "description": "Usually goes first.",
+            "multihit": 1,
+            "recoil": null,
+            "drain": null,
+            "secondary": null
+        },
+        "bravebird": {
+            "id": "bravebird",
+            "name": "Brave Bird",
+            "type": "Flying",
+            "power": 120,
+            "accuracy": 100,
+            "category": "Physical",
+            "priority": 0,
+            "description": "Has 33% recoil.",
+            "multihit": 1,
+            "recoil": [
+                33,
+                100
+            ],
+            "drain": null,
+            "secondary": null
+        },
+        "saltcure": {
+            "id": "saltcure",
+            "name": "Salt Cure",
+            "type": "Rock",
+            "power": 40,
+            "accuracy": 100,
+            "category": "Physical",
+            "priority": 0,
+            "description": "Deals 1/8 max HP each turn; 1/4 on Steel, Water.",
+            "multihit": 1,
+            "recoil": null,
+            "drain": null,
+            "secondary": {
+                "chance": 100,
+                "volatileStatus": "saltcure"
+            }
+        }
+    },
+    "chart": {
+        "Bug": {
+            "Bug": 1,
+            "Dark": 2,
+            "Dragon": 1,
+            "Electric": 1,
+            "Fairy": 0.5,
+            "Fighting": 0.5,
+            "Fire": 0.5,
+            "Flying": 0.5,
+            "Ghost": 0.5,
+            "Grass": 2,
+            "Ground": 1,
+            "Ice": 1,
+            "Normal": 1,
+            "Poison": 0.5,
+            "Psychic": 2,
+            "Rock": 1,
+            "Steel": 0.5,
+            "Water": 1
+        },
+        "Dark": {
+            "Bug": 1,
+            "Dark": 0.5,
+            "Dragon": 1,
+            "Electric": 1,
+            "Fairy": 0.5,
+            "Fighting": 0.5,
+            "Fire": 1,
+            "Flying": 1,
+            "Ghost": 2,
+            "Grass": 1,
+            "Ground": 1,
+            "Ice": 1,
+            "Normal": 1,
+            "Poison": 1,
+            "Psychic": 2,
+            "Rock": 1,
+            "Steel": 1,
+            "Water": 1
+        },
+        "Dragon": {
+            "Bug": 1,
+            "Dark": 1,
+            "Dragon": 2,
+            "Electric": 1,
+            "Fairy": 0,
+            "Fighting": 1,
+            "Fire": 1,
+            "Flying": 1,
+            "Ghost": 1,
+            "Grass": 1,
+            "Ground": 1,
+            "Ice": 1,
+            "Normal": 1,
+            "Poison": 1,
+            "Psychic": 1,
+            "Rock": 1,
+            "Steel": 0.5,
+            "Water": 1
+        },
+        "Electric": {
+            "Bug": 1,
+            "Dark": 1,
+            "Dragon": 0.5,
+            "Electric": 0.5,
+            "Fairy": 1,
+            "Fighting": 1,
+            "Fire": 1,
+            "Flying": 2,
+            "Ghost": 1,
+            "Grass": 0.5,
+            "Ground": 0,
+            "Ice": 1,
+            "Normal": 1,
+            "Poison": 1,
+            "Psychic": 1,
+            "Rock": 1,
+            "Steel": 1,
+            "Water": 2
+        },
+        "Fairy": {
+            "Bug": 1,
+            "Dark": 2,
+            "Dragon": 2,
+            "Electric": 1,
+            "Fairy": 1,
+            "Fighting": 2,
+            "Fire": 0.5,
+            "Flying": 1,
+            "Ghost": 1,
+            "Grass": 1,
+            "Ground": 1,
+            "Ice": 1,
+            "Normal": 1,
+            "Poison": 0.5,
+            "Psychic": 1,
+            "Rock": 1,
+            "Steel": 0.5,
+            "Water": 1
+        },
+        "Fighting": {
+            "Bug": 0.5,
+            "Dark": 2,
+            "Dragon": 1,
+            "Electric": 1,
+            "Fairy": 0.5,
+            "Fighting": 1,
+            "Fire": 1,
+            "Flying": 0.5,
+            "Ghost": 0,
+            "Grass": 1,
+            "Ground": 1,
+            "Ice": 2,
+            "Normal": 2,
+            "Poison": 0.5,
+            "Psychic": 0.5,
+            "Rock": 2,
+            "Steel": 2,
+            "Water": 1
+        },
+        "Fire": {
+            "Bug": 2,
+            "Dark": 1,
+            "Dragon": 0.5,
+            "Electric": 1,
+            "Fairy": 1,
+            "Fighting": 1,
+            "Fire": 0.5,
+            "Flying": 1,
+            "Ghost": 1,
+            "Grass": 2,
+            "Ground": 1,
+            "Ice": 2,
+            "Normal": 1,
+            "Poison": 1,
+            "Psychic": 1,
+            "Rock": 0.5,
+            "Steel": 2,
+            "Water": 0.5
+        },
+        "Flying": {
+            "Bug": 2,
+            "Dark": 1,
+            "Dragon": 1,
+            "Electric": 0.5,
+            "Fairy": 1,
+            "Fighting": 2,
+            "Fire": 1,
+            "Flying": 1,
+            "Ghost": 1,
+            "Grass": 2,
+            "Ground": 1,
+            "Ice": 1,
+            "Normal": 1,
+            "Poison": 1,
+            "Psychic": 1,
+            "Rock": 0.5,
+            "Steel": 0.5,
+            "Water": 1
+        },
+        "Ghost": {
+            "Bug": 1,
+            "Dark": 0.5,
+            "Dragon": 1,
+            "Electric": 1,
+            "Fairy": 1,
+            "Fighting": 1,
+            "Fire": 1,
+            "Flying": 1,
+            "Ghost": 2,
+            "Grass": 1,
+            "Ground": 1,
+            "Ice": 1,
+            "Normal": 0,
+            "Poison": 1,
+            "Psychic": 2,
+            "Rock": 1,
+            "Steel": 1,
+            "Water": 1
+        },
+        "Grass": {
+            "Bug": 0.5,
+            "Dark": 1,
+            "Dragon": 0.5,
+            "Electric": 1,
+            "Fairy": 1,
+            "Fighting": 1,
+            "Fire": 0.5,
+            "Flying": 0.5,
+            "Ghost": 1,
+            "Grass": 0.5,
+            "Ground": 2,
+            "Ice": 1,
+            "Normal": 1,
+            "Poison": 0.5,
+            "Psychic": 1,
+            "Rock": 2,
+            "Steel": 0.5,
+            "Water": 2
+        },
+        "Ground": {
+            "Bug": 0.5,
+            "Dark": 1,
+            "Dragon": 1,
+            "Electric": 2,
+            "Fairy": 1,
+            "Fighting": 1,
+            "Fire": 2,
+            "Flying": 0,
+            "Ghost": 1,
+            "Grass": 0.5,
+            "Ground": 1,
+            "Ice": 1,
+            "Normal": 1,
+            "Poison": 2,
+            "Psychic": 1,
+            "Rock": 2,
+            "Steel": 2,
+            "Water": 1
+        },
+        "Ice": {
+            "Bug": 1,
+            "Dark": 1,
+            "Dragon": 2,
+            "Electric": 1,
+            "Fairy": 1,
+            "Fighting": 1,
+            "Fire": 0.5,
+            "Flying": 2,
+            "Ghost": 1,
+            "Grass": 2,
+            "Ground": 2,
+            "Ice": 0.5,
+            "Normal": 1,
+            "Poison": 1,
+            "Psychic": 1,
+            "Rock": 1,
+            "Steel": 0.5,
+            "Water": 0.5
+        },
+        "Normal": {
+            "Bug": 1,
+            "Dark": 1,
+            "Dragon": 1,
+            "Electric": 1,
+            "Fairy": 1,
+            "Fighting": 1,
+            "Fire": 1,
+            "Flying": 1,
+            "Ghost": 0,
+            "Grass": 1,
+            "Ground": 1,
+            "Ice": 1,
+            "Normal": 1,
+            "Poison": 1,
+            "Psychic": 1,
+            "Rock": 0.5,
+            "Steel": 0.5,
+            "Water": 1
+        },
+        "Poison": {
+            "Bug": 1,
+            "Dark": 1,
+            "Dragon": 1,
+            "Electric": 1,
+            "Fairy": 2,
+            "Fighting": 1,
+            "Fire": 1,
+            "Flying": 1,
+            "Ghost": 0.5,
+            "Grass": 2,
+            "Ground": 0.5,
+            "Ice": 1,
+            "Normal": 1,
+            "Poison": 0.5,
+            "Psychic": 1,
+            "Rock": 0.5,
+            "Steel": 0,
+            "Water": 1
+        },
+        "Psychic": {
+            "Bug": 1,
+            "Dark": 0,
+            "Dragon": 1,
+            "Electric": 1,
+            "Fairy": 1,
+            "Fighting": 2,
+            "Fire": 1,
+            "Flying": 1,
+            "Ghost": 1,
+            "Grass": 1,
+            "Ground": 1,
+            "Ice": 1,
+            "Normal": 1,
+            "Poison": 2,
+            "Psychic": 0.5,
+            "Rock": 1,
+            "Steel": 0.5,
+            "Water": 1
+        },
+        "Rock": {
+            "Bug": 2,
+            "Dark": 1,
+            "Dragon": 1,
+            "Electric": 1,
+            "Fairy": 1,
+            "Fighting": 0.5,
+            "Fire": 2,
+            "Flying": 2,
+            "Ghost": 1,
+            "Grass": 1,
+            "Ground": 0.5,
+            "Ice": 2,
+            "Normal": 1,
+            "Poison": 1,
+            "Psychic": 1,
+            "Rock": 1,
+            "Steel": 0.5,
+            "Water": 1
+        },
+        "Steel": {
+            "Bug": 1,
+            "Dark": 1,
+            "Dragon": 1,
+            "Electric": 0.5,
+            "Fairy": 2,
+            "Fighting": 1,
+            "Fire": 0.5,
+            "Flying": 1,
+            "Ghost": 1,
+            "Grass": 1,
+            "Ground": 1,
+            "Ice": 2,
+            "Normal": 1,
+            "Poison": 1,
+            "Psychic": 1,
+            "Rock": 2,
+            "Steel": 0.5,
+            "Water": 0.5
+        },
+        "Water": {
+            "Bug": 1,
+            "Dark": 1,
+            "Dragon": 0.5,
+            "Electric": 1,
+            "Fairy": 1,
+            "Fighting": 1,
+            "Fire": 2,
+            "Flying": 1,
+            "Ghost": 1,
+            "Grass": 0.5,
+            "Ground": 2,
+            "Ice": 1,
+            "Normal": 1,
+            "Poison": 1,
+            "Psychic": 1,
+            "Rock": 2,
+            "Steel": 1,
+            "Water": 0.5
+        }
+    }
+}

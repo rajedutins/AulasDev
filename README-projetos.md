@@ -13,5 +13,6 @@ Projetos independentes em HTML5, CSS3 e JavaScript, sem bibliotecas externas. Ab
 - [Jogo da cobrinha](09-snake/README.md): Grade, arrays de coordenadas, temporizadores, colisões e crescimento.
 - [Controle de despesas](10-controle-de-despesas/README.md): Objetos, filter/reduce, valores monetários em centavos, formulários e localStorage.
 - [Pedro's Ball](11-pedros-ball/README.md): Simulação de campeonato, calendário de partidas, pontuação, classificação e mata-mata.
+- [PokemonDoPedro](PokemonDoPedro/README.md): Batalhas por turnos, arena Three.js, tipos, golpes, IA, campeonato e persistência. Este projeto usa Vite; consulte as instruções próprias para executar.
 
 Cada pasta pode ser usada como um repositório Git independente. Os comandos estão no README de cada projeto. Nenhum repositório remoto foi criado.

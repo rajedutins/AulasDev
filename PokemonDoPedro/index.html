@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#090f23">
+    <meta name="description" content="PokemonDoPedro: arena de batalhas estratégicas, campeonato, ranking e histórico.">
+    <title>PokemonDoPedro | O desafio dos campeões</title>
+  <script type="module" crossorigin src="./assets/index-DgKpreqR.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-DCL1t92i.css">
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <a href="./" class="brand"><span class="brand-symbol" aria-hidden="true">◓</span><span>POKEMON<span class="brand-accent">DO</span>PEDRO<small>BATTLE ARENA / O DESAFIO DOS CAMPEÕES</small></span></a>
+            <nav aria-label="Navegação principal">
+                <button data-action="home">Início</button>
+                <button data-action="ranking">Ranking</button>
+                <button data-action="history">Histórico</button>
+                <button data-action="settings" aria-label="Configurações">⚙</button>
+            </nav>
+        </header>
+        <p id="storage-warning" class="storage-warning" role="status" hidden>Não foi possível salvar no navegador. Os resultados permanecem disponíveis nesta sessão.</p>
+        <main>
+            <div id="screen"></div>
+            <section id="battle-screen" hidden aria-labelledby="battle-title">
+                <div class="section-heading"><div><p class="eyebrow">ARENA / BATALHA 1×1</p><h1 id="battle-title">Hora do confronto.</h1></div><span id="turn-badge" class="badge">TURNO 1</span></div>
+                <div id="hp-panels" class="hp-panels"></div>
+                <div class="arena-frame"><div id="arena" aria-label="Arena tridimensional. Arraste para girar a câmera."></div><div class="arena-caption"><span>PLANOS 3D · ILUSTRAÇÕES ESTILIZADAS</span><span>ARRASTE PARA GIRAR A CÂMERA</span></div></div>
+                <div id="move-controls" class="move-controls"></div>
+                <div class="turn-actions"><p id="turn-hint" role="status">Selecione os golpes.</p><button id="execute-turn" class="button primary">Executar turno <span aria-hidden="true">↗</span></button></div>
+                <section class="battle-log"><h2>Diário da arena</h2><ol id="log" aria-live="polite" aria-relevant="additions"></ol></section>
+                <div id="battle-result"></div>
+            </section>
+        </main>
+        <footer><span>PokemonDoPedro · Um projeto de programação e estratégia.</span><span>Projeto de fã, não oficial. Ilustrações próprias; sem modelos oficiais.</span></footer>
+    </div>
+</body>
+</html>

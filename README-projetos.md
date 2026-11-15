@@ -1,6 +1,6 @@
 # Projetos para aulas de programação
 
-Dez projetos independentes em HTML5, CSS3 e JavaScript, sem bibliotecas externas. Abra o index.html da pasta escolhida.
+Projetos independentes em HTML5, CSS3 e JavaScript, sem bibliotecas externas. Abra o index.html da pasta escolhida.
 
 - [Contador interativo](01-contador/README.md): Variáveis, funções, eventos e DOM.
 - [Calculadora](02-calculadora/README.md): Operadores, condicionais, formulários e conversão numérica.
@@ -12,5 +12,6 @@ Dez projetos independentes em HTML5, CSS3 e JavaScript, sem bibliotecas externas
 - [Pong](08-pong/README.md): Canvas, coordenadas, velocidade, colisões e requestAnimationFrame.
 - [Jogo da cobrinha](09-snake/README.md): Grade, arrays de coordenadas, temporizadores, colisões e crescimento.
 - [Controle de despesas](10-controle-de-despesas/README.md): Objetos, filter/reduce, valores monetários em centavos, formulários e localStorage.
+- [Pedro's Ball](11-pedros-ball/README.md): Simulação de campeonato, calendário de partidas, pontuação, classificação e mata-mata.
 
 Cada pasta pode ser usada como um repositório Git independente. Os comandos estão no README de cada projeto. Nenhum repositório remoto foi criado.

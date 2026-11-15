@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#101d26">
+    <meta name="description" content="Escolha seu clube, acompanhe dez rodadas e dispute o título no Pedro's Ball.">
+    <title>Pedro's Ball | Seu time. Sua temporada.</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/engine.js" defer></script>
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <a class="brand" href="./index.html"><span class="brand-ball" aria-hidden="true">⚽</span><span>Pedro’s <strong>Ball</strong><small>CAMPEONATO • EDIÇÃO DE BOLSO</small></span></a>
+            <button id="new-season" class="button secondary" hidden>Nova temporada</button>
+        </header>
+
+        <main>
+            <section id="selection" aria-labelledby="selection-title">
+                <div class="hero">
+                    <div><p class="eyebrow">A TORCIDA COMEÇA COM VOCÊ</p><h1 id="selection-title">Seu time.<br>Sua <em>temporada.</em></h1><p>Dez rodadas. Quatro semifinalistas. Um campeão.<br>Vista a camisa e deixe a bola rolar.</p></div>
+                    <div class="pitch-art" aria-hidden="true"><div class="pitch-circle"></div><span>⚽</span><small>O PRÓXIMO CAMPEÃO<br>PODE SER O SEU TIME.</small></div>
+                </div>
+                <div class="section-heading"><div><p class="eyebrow">01 / ESCALAÇÃO DA TORCIDA</p><h2>Escolha seu clube</h2></div><span class="muted">12 clubes · 10 rodadas · mata-mata</span></div>
+                <fieldset class="team-picker"><legend class="sr-only">Time que você deseja acompanhar</legend><div id="team-grid" class="team-grid"></div></fieldset>
+                <div class="start-bar"><p id="selection-hint" role="status">Selecione um time para começar.</p><button id="start" class="button" disabled>Iniciar campeonato <span aria-hidden="true">↗</span></button></div>
+                <details class="rules"><summary>Como funciona o campeonato?</summary><p>Vitória vale 3 pontos; empate, 1 para cada time; derrota, 0. Todos os clubes jogam uma vez por rodada. Após 10 rodadas, os quatro primeiros disputam semifinais: 1º × 4º e 2º × 3º. Os vencedores fazem a final. Empates no mata-mata são decididos nos pênaltis.</p><p>Desempates na tabela: pontos, vitórias, saldo de gols, gols marcados e nome do clube. Seleção ilustrativa de clubes brasileiros: formato fictício, sem vínculo com a CBF ou com a composição oficial de uma edição da Série A. Escudos são representações gráficas próprias.</p></details>
+            </section>
+
+            <section id="championship" hidden aria-labelledby="season-title">
+                <div class="season-banner"><div><p class="eyebrow" id="stage-label">FASE DE CLASSIFICAÇÃO</p><h1 id="season-title">O campeonato começou.</h1><p id="season-description"></p></div><div id="my-team" class="my-team"></div></div>
+                <ol id="progress" class="progress" aria-label="Progresso das dez rodadas"></ol>
+                <p id="announcement" class="announcement" role="status" aria-live="polite"></p>
+
+                <div class="dashboard">
+                    <div class="match-column">
+                        <section class="panel"><div class="section-heading compact"><h2 id="matches-title">Jogos da rodada</h2><span id="round-label" class="tag"></span></div><p id="match-instruction" class="muted"></p><div id="matches" class="matches"></div><button id="advance" class="button full" hidden></button></section>
+                        <section id="playoffs" class="panel" hidden><div class="section-heading compact"><h2>Reta final</h2><span aria-hidden="true">🏆</span></div><div id="bracket"></div></section>
+                        <section id="champion" class="champion" hidden aria-labelledby="champion-title"><div id="confetti" aria-hidden="true"></div><p class="eyebrow">A TAÇA TEM DONO</p><div class="trophy" aria-hidden="true">🏆</div><h2 id="champion-title"></h2><p id="champion-description"></p><button id="play-again" class="button">Jogar outra temporada</button></section>
+                    </div>
+                    <section class="panel standings-panel"><div class="section-heading compact"><h2>Classificação</h2><span class="tag">G4</span></div><p class="muted table-note">Os quatro primeiros avançam. Seu clube está destacado.</p><div class="table-scroll"><table><caption class="sr-only">Classificação do campeonato: posição, clube, pontos, jogos, vitórias, empates, derrotas e saldo de gols.</caption><thead><tr><th scope="col">#</th><th scope="col">Clube</th><th scope="col"><abbr title="Pontos">PTS</abbr></th><th scope="col"><abbr title="Jogos">J</abbr></th><th scope="col"><abbr title="Vitórias">V</abbr></th><th scope="col"><abbr title="Empates">E</abbr></th><th scope="col"><abbr title="Derrotas">D</abbr></th><th scope="col"><abbr title="Saldo de gols">SG</abbr></th></tr></thead><tbody id="standings"></tbody></table></div><p class="table-legend"><span></span> Zona de classificação às semifinais</p></section>
+                </div>
+            </section>
+        </main>
+        <footer>Idealizado e criado por Pedro Nazareno Justino, o Hacker do Educallis<span>Pedro’s Ball · HTML, CSS & JavaScript</span></footer>
+    </div>
+    <dialog id="restart-dialog" aria-labelledby="restart-title"><h2 id="restart-title">Começar outra temporada?</h2><p>O campeonato atual será encerrado e você poderá escolher outro clube.</p><div class="dialog-actions"><button id="cancel-restart" class="button secondary">Continuar jogando</button><button id="confirm-restart" class="button">Nova temporada</button></div></dialog>
+</body>
+</html>

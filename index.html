@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <title>AulasDev | Prof. Rodrigo Justino</title>
+
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f1f5f9;
+      color: #1e293b;
+    }
+
+    header {
+      background: linear-gradient(135deg, #111c38, #304c92);
+      color: white;
+      padding: 45px 20px;
+      text-align: center;
+    }
+
+    header h1 { margin: 0 0 12px; }
+
+    main {
+      max-width: 1150px;
+      margin: 35px auto;
+      padding: 0 20px;
+    }
+
+    .projetos {
+      display: grid;
+      grid-template-columns:
+        repeat(auto-fit, minmax(210px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 28px 18px;
+      border-radius: 14px;
+      text-align: center;
+      text-decoration: none;
+      color: inherit;
+      box-shadow: 0 3px 12px #00000012;
+      transition: transform .2s, box-shadow .2s;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 25px #00000025;
+    }
+
+    .card i {
+      font-size: 40px;
+      color: #2563eb;
+      margin-bottom: 18px;
+    }
+
+    .card h3 { margin: 8px 0; }
+
+    .card p {
+      font-size: 14px;
+      color: #64748b;
+    }
+
+    footer {
+      text-align: center;
+      padding: 35px;
+      color: #64748b;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1><i class="fa-solid fa-code"></i> AulasDev</h1>
+    <p>Projetos e práticas de programação</p>
+    <p>Prof. Rodrigo Justino</p>
+  </header>
+
+  <main>
+    <h2>Projetos disponíveis</h2>
+    <div class="projetos" id="projetos"></div>
+  </main>
+
+  <footer>
+    AulasDev | Material didático de programação
+  </footer>
+
+  <script>
+    const projetos = [
+      ["Contador", "01-contador", "fa-hashtag"],
+      ["Calculadora", "02-calculadora", "fa-calculator"],
+      ["Quiz", "03-quiz", "fa-circle-question"],
+      ["Lista de Tarefas", "04-lista-de-tarefas", "fa-list-check"],
+      ["Pedra, Papel e Tesoura", "05-pedra-papel-tesoura", "fa-hand"],
+      ["Jogo da Velha", "06-jogo-da-velha", "fa-table-cells"],
+      ["Jogo da Memória", "07-jogo-da-memoria", "fa-brain"],
+      ["Pong", "08-pong", "fa-table-tennis-paddle-ball"],
+      ["Snake", "09-snake", "fa-gamepad"],
+      ["Controle de Despesas", "10-controle-de-despesas", "fa-wallet"],
+      ["Pedro's Ball", "11-pedros-ball", "fa-futbol"],
+      ["Captive Portal", "CaptivePortal", "fa-wifi"],
+      ["Pokémon do Pedro", "PokemonDoPedro", "fa-bolt"]
+    ];
+
+    const container = document.getElementById("projetos");
+
+    projetos.forEach(([nome, pasta, icone]) => {
+      const card = document.createElement("a");
+      card.className = "card";
+      card.href = `./${pasta}/`;
+      card.innerHTML = `
+        <i class="fa-solid ${icone}"></i>
+        <h3>${nome}</h3>
+        <p>Clique para acessar o projeto</p>
+      `;
+      container.appendChild(card);
+    });
+  </script>
+</body>
+</html>
